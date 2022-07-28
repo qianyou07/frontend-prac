@@ -1,3 +1,111 @@
+@-webkit-keyframes darken {
+  from {
+    opacity: 0%;
+    visibility: hidden;
+  }
+  1% {
+    opacity: 0%;
+    visibility: visible;
+  }
+  to {
+    opacity: 80%;
+    visibility: visible;
+  }
+}
+@keyframes darken {
+  from {
+    opacity: 0%;
+    visibility: hidden;
+  }
+  1% {
+    opacity: 0%;
+    visibility: visible;
+  }
+  to {
+    opacity: 80%;
+    visibility: visible;
+  }
+}
+@-webkit-keyframes lighten {
+  from {
+    opacity: 80%;
+    visibility: visible;
+  }
+  99% {
+    opacity: 0%;
+    visibility: visible;
+  }
+  to {
+    opacity: 0%;
+    visibility: hidden;
+  }
+}
+@keyframes lighten {
+  from {
+    opacity: 80%;
+    visibility: visible;
+  }
+  99% {
+    opacity: 0%;
+    visibility: visible;
+  }
+  to {
+    opacity: 0%;
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes slideIn {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 60%;
+  }
+}
+@keyframes slideIn {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 60%;
+  }
+}
+@-webkit-keyframes slideOut {
+  from {
+    width: 60%;
+  }
+  to {
+    width: 0%;
+  }
+}
+@keyframes slideOut {
+  from {
+    width: 60%;
+  }
+  to {
+    width: 0%;
+  }
+}
+.darken {
+  -webkit-animation: darken 140ms linear forwards;
+          animation: darken 140ms linear forwards;
+}
+
+.lighten {
+  -webkit-animation: lighten 140ms linear forwards;
+          animation: lighten 140ms linear forwards;
+}
+
+.slide-in {
+  -webkit-animation: slideIn 140ms linear forwards;
+          animation: slideIn 140ms linear forwards;
+}
+
+.slide-out {
+  -webkit-animation: slideOut 140ms linear forwards;
+          animation: slideOut 140ms linear forwards;
+}
+
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -12,7 +120,7 @@ body {
   margin: 0;
   line-height: 1.3;
   font-family: "Epilogue", sans-serif;
-  font-size: 1.125rem;
+  font-size: 0.875rem;
   color: hsl(0deg, 0%, 41%);
   font-weight: 500;
 }
@@ -37,6 +145,36 @@ a, a:visited, a:hover {
   align-items: center;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsl(0deg, 0%, 8%);
+  opacity: 0%;
+  visibility: hidden;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsl(0deg, 0%, 98%);
+}
+
+.dropdown > .menu {
+  position: absolute;
+  display: none;
+  list-style: none;
+}
+
+.dropdown:hover > .menu {
+  display: block;
+  list-style: none;
+}
+
 @media (max-width: 63.9375em) {
   .hide-for-mobile {
     display: none;
@@ -55,23 +193,30 @@ a, a:visited, a:hover {
 .header_logo {
   margin-right: 3.9375rem;
 }
-.header_menu > span {
-  display: block;
-  width: 34px;
-  height: 2px;
-  background-color: hsl(0deg, 0%, 8%);
+.header_menu {
+  z-index: 1;
 }
-.header_menu > span:not(:last-child) {
-  margin-bottom: 4px;
-}
-.header_links > a, .header_auth > a {
+.header_links a, .header_auth a {
   color: hsl(0deg, 0%, 41%);
 }
-.header_links > a:hover, .header_auth > a:hover {
+.header_links a:hover, .header_auth a:hover {
   color: hsl(0deg, 0%, 8%);
 }
-.header_links > a:not(:last-child) {
+.header_links > a, .header_links > div > img {
   margin-right: 2.4375rem;
+}
+.header_links .menu {
+  border-radius: 10px;
+  padding: 1.625rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.header_links .menu li:not(:last-child) {
+  margin-bottom: 0.9375rem;
+}
+.header_links .menu img {
+  width: 0.9375rem;
+  height: 0.9375rem;
+  margin-right: 0.875rem;
 }
 .header_auth > a {
   padding: 0.8125rem 1.5rem;
@@ -84,4 +229,14 @@ a, a:visited, a:hover {
 }
 .header_auth a:last-child:hover {
   border-color: hsl(0deg, 0%, 8%);
+}
+.header .dropdown > img {
+  content: url("/images/icon-arrow-down.svg");
+}
+.header .dropdown:hover > img {
+  content: url("/images/icon-arrow-up.svg");
+}
+.header #menu-img {
+  width: 1.625rem;
+  height: 1.625rem;
 }/*# sourceMappingURL=style.css.map */

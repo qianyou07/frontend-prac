@@ -12,7 +12,7 @@ body {
 	margin: 0;
 	line-height: 1.3;
 	font-family: 'Epilogue', sans-serif;
-	font-size: 1.125rem;
+	font-size: 0.875rem;
 	color: $mediumGray;
 	font-weight: 500;
 }
@@ -40,6 +40,38 @@ a, a:visited, a:hover {
 		align-items: center;
 	}
 }
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: $almostBlack;
+	opacity: 0%;
+	visibility: hidden;
+}
+
+.side-menu {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: $almostWhite;
+}
+
+.dropdown>.menu {
+	position: absolute;
+	display: none;
+	list-style: none;
+}
+
+.dropdown:hover>.menu {
+	display: block;
+	list-style: none;
+}
+
+
 
 .hide-for-mobile {
 	@include breakpoint-down(medium){

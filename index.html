@@ -19,26 +19,42 @@
   </style>
 </head>
 <body>
-
+  <div class="overlay hide-for-desktop"></div>
+  <div class="side-menu hide-for-desktop"></div>
   <header class="header">
     <nav class="flex flex-jc-sb">
       <div class="leftHeader flex flex-jc-sb">
         <a href="/" class="header_logo">
           <img src="images/logo.svg" alt="Logo">
         </a>
-        <div class="header_links hide-for-mobile">
-          <a href="#">Features</a>
-          <a href="#">Company</a>
-          <a href="#">Careers</a>
-          <a href="#">About</a>
+        <div class="header_links hide-for-mobile flex">
+          <div class="dropdown">
+            <a href="#" class="links">Features</a>
+            <img src="images/icon-arrow-down.svg" alt="arrow-down">
+            <ul class="menu">
+              <li><a href="#"><img src="images/icon-todo.svg" alt="todolist">Todo List</a></li>
+              <li><a href="#"><img src="images/icon-calendar.svg" alt="calendar">Calendar</a></li>
+              <li><a href="#"><img src="images/icon-reminders.svg" alt="reminders">Reminders</a></li>
+              <li><a href="#"><img src="images/icon-planning.svg" alt="planning">Planning</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <a href="#" class="links">Company</a>
+            <img src="images/icon-arrow-down.svg" alt="arrow-down">
+            <ul class="menu">
+              <li><a href="#">History</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <a href="#" class="links">Careers</a>
+          <a href="#" class="links">About</a>
         </div>
       </div>
 
       <div class="rightHeader flex flex-jc-end">
-        <a href="#" class="header_menu hide-for-desktop">
-          <span></span>
-          <span></span>
-          <span></span>
+        <a href="#" class="header_menu hide-for-desktop"> 
+          <img id="menu-img" src="images/icon-menu.svg" alt="menu">
         </a>
   
   
