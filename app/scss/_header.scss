@@ -1,0 +1,53 @@
+.header {
+	> nav {
+		padding: 2.1875rem 2.5rem; //35px 40px
+	}
+
+	&_logo {
+		margin-right: 3.9375rem;
+	}
+	&_menu {
+		> span {
+			display: block;
+			width: 34px;
+			height: 2px;
+			background-color: $almostBlack;
+
+			&:not(:last-child) {
+				margin-bottom: 4px;
+			}
+		}
+	}
+
+	&_links, &_auth {
+		> a {
+			color: $mediumGray;
+		}
+		
+		> a:hover {
+			color: $almostBlack;
+		}
+	}
+
+	&_links {
+		> a:not(:last-child){
+			margin-right: 2.4375rem;
+		}
+	}
+
+	&_auth {
+		> a {
+			padding: 0.8125rem 1.5rem; //13px 24px
+		}
+		a:last-child {
+			margin-left: 1.125rem; //18px
+			border: 1.5px solid;
+			border-color: $mediumGray;
+			border-radius: 15px;
+		}
+		a:last-child:hover {
+			border-color: $almostBlack;
+		}
+	}
+
+}
