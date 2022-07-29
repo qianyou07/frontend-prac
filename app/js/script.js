@@ -2,6 +2,7 @@ const overlay = document.querySelector(".overlay");
 const hamburger = document.querySelector(".header_menu");
 const sideMenu = document.querySelector(".side-menu");
 const menuImg = document.querySelector("#menu-img");
+const dropdowns = document.querySelectorAll(".side-menu .dropdown > a.links");
 
 
 hamburger.addEventListener('click', function(){
@@ -21,4 +22,15 @@ hamburger.addEventListener('click', function(){
 		sideMenu.classList.remove('slide-out');
 		menuImg.src = "images/icon-close-menu.svg";
 	  }  
+});
+
+dropdowns.forEach(function(element){
+	element.addEventListener('click', function(){
+		if(element.parentElement.classList.contains('open')){
+			element.parentElement.classList.remove('open');
+		}
+		else{
+			element.parentElement.classList.add('open');
+		}
+	});
 });

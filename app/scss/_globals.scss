@@ -36,8 +36,16 @@ a, a:visited, a:hover {
 		justify-content: end;
 	}
 
+	&-jc-se {
+		justify-content: space-evenly;
+	}
+
 	&-ai-c {
 		align-items: center;
+	}
+
+	&-dir-col {
+		flex-direction: column;
 	}
 }
 
@@ -58,6 +66,9 @@ a, a:visited, a:hover {
 	right: 0;
 	bottom: 0;
 	background-color: $almostWhite;
+	.dropdown>.menu {
+		position: relative;
+	}
 }
 
 .dropdown>.menu {
@@ -70,7 +81,6 @@ a, a:visited, a:hover {
 	display: block;
 	list-style: none;
 }
-
 
 
 .hide-for-mobile {
