@@ -167,6 +167,7 @@ a, a:visited, a:hover {
   top: 0;
   right: 0;
   bottom: 0;
+  width: 0%;
   background-color: hsl(0deg, 0%, 98%);
 }
 .side-menu .dropdown > .menu {
@@ -211,7 +212,7 @@ a, a:visited, a:hover {
 .header_links a:hover, .header_auth a:hover, .header_auth_for_mobile a:hover {
   color: hsl(0deg, 0%, 8%);
 }
-.header_links > a, .header_links > div > img {
+.header_links > a, .header_links > div > a {
   margin-right: 2.4375rem;
 }
 .header_links .menu {
@@ -239,10 +240,10 @@ a, a:visited, a:hover {
 .header_auth a:last-child:hover {
   border-color: hsl(0deg, 0%, 8%);
 }
-.header .dropdown > img {
+.header .dropdown > a > img {
   content: url("/images/icon-arrow-down.svg");
 }
-.header .dropdown:hover > img {
+.header .dropdown:hover > a > img {
   content: url("/images/icon-arrow-up.svg");
 }
 .header #menu-img {
@@ -261,6 +262,12 @@ a, a:visited, a:hover {
   box-shadow: none;
   margin: 0;
 }
+.side-menu .header_links > div > a > img {
+  content: url("/images/icon-arrow-down.svg");
+}
+.side-menu .header_links .open > a > img {
+  content: url("/images/icon-arrow-up.svg");
+}
 .side-menu .header_links .open > ul.menu {
   display: block;
 }
@@ -275,6 +282,9 @@ a, a:visited, a:hover {
   border: 1.5px solid;
   border-color: hsl(0deg, 0%, 41%);
   border-radius: 15px;
+}
+.side-menu .header_auth_for_mobile > a:hover:last-child {
+  border-color: hsl(0deg, 0%, 8%);
 }
 
 div.main.hide-for-mobile p.title {
@@ -316,4 +326,43 @@ div.main.hide-for-mobile div.client-img > img {
 }
 div.main.hide-for-mobile div.client-img > img:not(:last-child) {
   margin-right: 1.875rem;
+}
+
+div.main.hide-for-desktop p.title {
+  text-align: center;
+  color: hsl(0deg, 0%, 8%);
+  font-weight: 700;
+  font-size: 1.875rem;
+  margin-bottom: 1.875rem;
+}
+div.main.hide-for-desktop p.paragraph {
+  text-align: center;
+  font-size: 0.875rem;
+  margin-top: 0;
+  margin-bottom: 1.875rem;
+}
+div.main.hide-for-desktop a.learnMoreBtn {
+  padding: 1.25rem 2.125rem;
+  color: hsl(0deg, 0%, 98%);
+  border-radius: 15px;
+  background-color: hsl(0deg, 0%, 8%);
+  height: auto;
+  width: 10.25rem;
+  text-align: center;
+  margin-bottom: 5rem;
+  font-size: 0.9375rem;
+  border: solid;
+  border-color: hsl(0deg, 0%, 8%);
+  font-weight: 700;
+}
+div.main.hide-for-desktop a:hover.learnMoreBtn {
+  color: hsl(0deg, 0%, 8%);
+  background-color: hsl(0deg, 0%, 98%);
+}
+div.main.hide-for-desktop div.client-img > img {
+  height: auto;
+  width: calc((100% - 4.875rem) / 4);
+}
+div.main.hide-for-desktop div.client-img > img:not(:last-child) {
+  margin-right: 1.625rem;
 }/*# sourceMappingURL=style.css.map */

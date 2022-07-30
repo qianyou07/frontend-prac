@@ -21,7 +21,7 @@
 	}
 
 	&_links {
-		> a,  > div > img {
+		> a,  > div > a {
 			margin-right: 2.4375rem;
 		}
 		.menu {
@@ -54,11 +54,11 @@
 		}
 	}
 
-	.dropdown > img {
+	.dropdown > a > img {
 		content:url("/images/icon-arrow-down.svg")
 	}
 
-	.dropdown:hover > img {
+	.dropdown:hover > a > img {
 		content:url("/images/icon-arrow-up.svg")
 	}
 
@@ -84,6 +84,14 @@
 				margin: 0;
 			}
 
+			> div > a > img {
+				content:url("/images/icon-arrow-down.svg")
+			}
+
+			.open > a > img {
+				content:url("/images/icon-arrow-up.svg")
+			}
+
 			.open > ul.menu {
 				display: block;
 			}
@@ -100,6 +108,10 @@
 				border: 1.5px solid;
 				border-color: $mediumGray;
 				border-radius: 15px;
+			}
+
+			> a:hover:last-child {
+				border-color: $almostBlack;
 			}
 		}
 

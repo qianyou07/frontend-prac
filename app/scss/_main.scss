@@ -42,3 +42,46 @@ div.main.hide-for-mobile {
 		}
 	}
 }
+
+div.main.hide-for-desktop {
+	p.title {
+		text-align: center;
+		color: $almostBlack;
+		font-weight: 700;
+		font-size: 1.875rem;
+		margin-bottom: 1.875rem;
+	}
+	p.paragraph {
+		text-align: center;
+		font-size: 0.875rem;
+		margin-top: 0;
+		margin-bottom: 1.875rem;
+	}
+	a.learnMoreBtn {
+		padding: 1.25rem 2.125rem;
+		color: $almostWhite;
+		border-radius: 15px;
+		background-color: $almostBlack;
+		height: auto;
+		width: 10.25rem;
+		text-align: center;
+		margin-bottom: 5rem;
+		font-size: 0.9375rem;
+		border: solid;
+		border-color: $almostBlack;
+		font-weight: 700;
+	}
+	a:hover.learnMoreBtn {
+		color: $almostBlack;
+		background-color: $almostWhite;
+	}
+	div.client-img {
+		> img {
+			height: auto;
+			width: calc((100% - 1.625rem * 3) / 4);
+		}
+		> img:not(:last-child) {
+			margin-right: 1.625rem;
+		}
+	}
+}
