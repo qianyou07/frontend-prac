@@ -1,133 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com"> 
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="app/scss/style.css">
-  
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app/scss/style.css">
+    
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <div class="overlay hide-for-desktop"></div>
-  <div class="side-menu hide-for-desktop">
-    <div class="header_links flex flex-dir-col">
-      <div class="dropdown">
-        <a href="#" class="links">Features
-          <img src="images/icon-arrow-down.svg" alt="arrow-down">
-        </a>
-        <ul class="menu">
-          <li><a href="#"><img src="images/icon-todo.svg" alt="todolist">Todo List</a></li>
-          <li><a href="#"><img src="images/icon-calendar.svg" alt="calendar">Calendar</a></li>
-          <li><a href="#"><img src="images/icon-reminders.svg" alt="reminders">Reminders</a></li>
-          <li><a href="#"><img src="images/icon-planning.svg" alt="planning">Planning</a></li>
-        </ul>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution { font-size: 11px; text-align: center; }
+      .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+  </head>
+  <body>
+    <div class="overlay hide-for-desktop"></div>
+    <div class="side-menu hide-for-desktop">
+      <div class="header_links flex flex-dir-col">
+        <div class="dropdown">
+          <a href="#" class="links">Features
+            <img src="images/icon-arrow-down.svg" alt="arrow-down">
+          </a>
+          <ul class="menu">
+            <li><a href="#"><img src="images/icon-todo.svg" alt="todolist">Todo List</a></li>
+            <li><a href="#"><img src="images/icon-calendar.svg" alt="calendar">Calendar</a></li>
+            <li><a href="#"><img src="images/icon-reminders.svg" alt="reminders">Reminders</a></li>
+            <li><a href="#"><img src="images/icon-planning.svg" alt="planning">Planning</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <a href="#" class="links">Company
+            <img src="images/icon-arrow-down.svg" alt="arrow-down">
+          </a>
+          <ul class="menu">
+            <li><a href="#">History</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <a href="#" class="links">Careers</a>
+        <a href="#" class="links">About</a>
       </div>
-      <div class="dropdown">
-        <a href="#" class="links">Company
-          <img src="images/icon-arrow-down.svg" alt="arrow-down">
-        </a>
-        <ul class="menu">
-          <li><a href="#">History</a></li>
-          <li><a href="#">Our Team</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
+      <div class="header_auth_for_mobile flex flex-dir-col">
+        <a href="#">Login</a>
+        <a href="#">Register</a>
       </div>
-      <a href="#" class="links">Careers</a>
-      <a href="#" class="links">About</a>
     </div>
-    <div class="header_auth_for_mobile flex flex-dir-col">
-      <a href="#">Login</a>
-      <a href="#">Register</a>
-    </div>
-  </div>
-  <header class="header">
-    <nav class="flex flex-jc-sb">
-      <div class="leftHeader flex flex-jc-sb">
-        <a href="/" class="header_logo">
-          <img src="images/logo.svg" alt="Logo">
-        </a>
-        <div class="header_links hide-for-mobile flex">
-          <div class="dropdown">
-            <a href="#" class="links">Features
-              <img src="images/icon-arrow-down.svg" alt="arrow-down">
-            </a>
-            <ul class="menu">
-              <li><a href="#"><img src="images/icon-todo.svg" alt="todolist">Todo List</a></li>
-              <li><a href="#"><img src="images/icon-calendar.svg" alt="calendar">Calendar</a></li>
-              <li><a href="#"><img src="images/icon-reminders.svg" alt="reminders">Reminders</a></li>
-              <li><a href="#"><img src="images/icon-planning.svg" alt="planning">Planning</a></li>
-            </ul>
+    <header class="header">
+      <nav class="flex flex-jc-sb">
+        <div class="leftHeader flex flex-jc-sb">
+          <a href="/" class="header_logo">
+            <img src="images/logo.svg" alt="Logo">
+          </a>
+          <div class="header_links hide-for-mobile flex">
+            <div class="dropdown">
+              <a href="#" class="links">Features
+                <img src="images/icon-arrow-down.svg" alt="arrow-down">
+              </a>
+              <ul class="menu">
+                <li><a href="#"><img src="images/icon-todo.svg" alt="todolist">Todo List</a></li>
+                <li><a href="#"><img src="images/icon-calendar.svg" alt="calendar">Calendar</a></li>
+                <li><a href="#"><img src="images/icon-reminders.svg" alt="reminders">Reminders</a></li>
+                <li><a href="#"><img src="images/icon-planning.svg" alt="planning">Planning</a></li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <a href="#" class="links">Company
+                <img src="images/icon-arrow-down.svg" alt="arrow-down">
+              </a>
+              <ul class="menu">
+                <li><a href="#">History</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+            <a href="#" class="links">Careers</a>
+            <a href="#" class="links">About</a>
           </div>
-          <div class="dropdown">
-            <a href="#" class="links">Company
-              <img src="images/icon-arrow-down.svg" alt="arrow-down">
-            </a>
-            <ul class="menu">
-              <li><a href="#">History</a></li>
-              <li><a href="#">Our Team</a></li>
-              <li><a href="#">Blog</a></li>
-            </ul>
+        </div>
+
+        <div class="rightHeader flex flex-jc-end">
+          <a href="#" class="header_menu hide-for-desktop"> 
+            <img id="menu-img" src="images/icon-menu.svg" alt="menu">
+          </a>
+    
+    
+    
+          <div class="header_auth hide-for-mobile">
+            <a href="#">Login</a>
+            <a href="#">Register</a>
           </div>
-          <a href="#" class="links">Careers</a>
-          <a href="#" class="links">About</a>
+        </div>
+
+      </nav>
+    </header>
+    <div class="main flex flex-jc-se hide-for-mobile">
+      <div class="flex flex-dir-col">
+        <p class="title">Make<br>remote work</p>
+        <p class="paragraph">Get your team in sync, no matter your location.<br>Streamline processes, create team rituals, and<br>watch productivity soar.</p>
+        <a class="learnMoreBtn" href="#">Learn more</a>
+        <div class="flex client-img">
+          <img src="images/client-databiz.svg" alt="client-databiz">
+          <img src="images/client-audiophile.svg" alt="client-audiophile">
+          <img src="images/client-meet.svg" alt="client-meet">
+          <img src="images/client-maker.svg" alt="client-maker">
         </div>
       </div>
+      <img src="images/image-hero-desktop.png" alt="hero-desktop">
+    </div>
 
-      <div class="rightHeader flex flex-jc-end">
-        <a href="#" class="header_menu hide-for-desktop"> 
-          <img id="menu-img" src="images/icon-menu.svg" alt="menu">
-        </a>
-  
-  
-  
-        <div class="header_auth hide-for-mobile">
-          <a href="#">Login</a>
-          <a href="#">Register</a>
+    <div class="main flex flex-dir-col hide-for-desktop">
+      <img src="images/image-hero-mobile.png" alt="hero-mobile">
+      <div class="flex flex-dir-col flex-ai-c">
+        <p class="title">Make remote work</p>
+        <p class="paragraph">Get your team in sync, no matter your<br>location. Streamline processes, create<br>team rituals, and watch productivity soar.</p>
+        <a class="learnMoreBtn" href="#">Learn more</a>
+        <div class="flex client-img">
+          <img src="images/client-databiz.svg" alt="client-databiz">
+          <img src="images/client-audiophile.svg" alt="client-audiophile">
+          <img src="images/client-meet.svg" alt="client-meet">
+          <img src="images/client-maker.svg" alt="client-maker">
         </div>
       </div>
-
-    </nav>
-  </header>
-  <div class="main flex flex-jc-se hide-for-mobile">
-    <div class="flex flex-dir-col">
-      <p class="title">Make<br>remote work</p>
-      <p class="paragraph">Get your team in sync, no matter your location.<br>Streamline processes, create team rituals, and<br>watch productivity soar.</p>
-      <a class="learnMoreBtn" href="#">Learn more</a>
-      <div class="flex client-img">
-        <img src="images/client-databiz.svg" alt="client-databiz">
-        <img src="images/client-audiophile.svg" alt="client-audiophile">
-        <img src="images/client-meet.svg" alt="client-meet">
-        <img src="images/client-maker.svg" alt="client-maker">
-      </div>
     </div>
-    <img src="images/image-hero-desktop.png" alt="hero-desktop">
-  </div>
-
-  <div class="main flex flex-dir-col hide-for-desktop">
-    <img src="images/image-hero-mobile.png" alt="hero-mobile">
-    <div class="flex flex-dir-col flex-ai-c">
-      <p class="title">Make remote work</p>
-      <p class="paragraph">Get your team in sync, no matter your<br>location. Streamline processes, create<br>team rituals, and watch productivity soar.</p>
-      <a class="learnMoreBtn" href="#">Learn more</a>
-      <div class="flex client-img">
-        <img src="images/client-databiz.svg" alt="client-databiz">
-        <img src="images/client-audiophile.svg" alt="client-audiophile">
-        <img src="images/client-meet.svg" alt="client-meet">
-        <img src="images/client-maker.svg" alt="client-maker">
-      </div>
-    </div>
-  </div>
-  <script src="app/js/script.js"></script>
-</body>
+    <script src="app/js/script.js"></script>
+  </body>
 </html>
